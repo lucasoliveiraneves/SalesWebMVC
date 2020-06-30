@@ -15,6 +15,7 @@ using SalesWebMVC.Services;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
 
+
 namespace SalesWebMVC
 {
     public class Startup
@@ -45,6 +46,7 @@ namespace SalesWebMVC
             services.AddScoped<SeedingService>();
             services.AddScoped<SellerService>();
             services.AddScoped<DepartmentService>();
+            services.AddScoped<SalesRecordService>();
         }
 
         
