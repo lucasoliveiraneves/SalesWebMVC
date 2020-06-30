@@ -31,9 +31,9 @@ namespace SalesWebMVC.Services
         {
             return _context.Seller.Include(obj =>obj.Department).FirstOrDefault(obj => obj.Id == id);
         }
-        public void Remove(int id)
+        public void Remove(int Id)
         {
-            var obj = _context.Seller.Find(id);
+            var obj = _context.Seller.Find(Id);
             _context.Seller.Remove(obj);
             _context.SaveChanges();
         }
